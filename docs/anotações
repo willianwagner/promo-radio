@@ -1,0 +1,13 @@
+php artisan crud:generate Banners --fields="imagem#file;"
+
+php artisan crud:generate Promocoes --fields="nome#string; status#select#options=ativo,inativo"
+
+php artisan crud:generate Sorteios --fields="nome#string;" --relationships="promocoes#hasMany#App\Promoco"
+
+php artisan crud:generate SorteioGanhadores --fields="ouvinte_id#string;sorteio_id#string;promocao_id#string;" --relationships="ouvintes#hasOne#App\Ouvinte;promocao#hasOne#App\Promoco"
+
+php artisan crud:generate Top --fields="posicao#integer; artista#string; musica#string; capa#file; ano#string; mes#string; ativo#select#options=ativo,inativo"
+
+php artisan crud:generate Equipe --fields="nome#string; descricao#text; imagem#file;"
+
+php artisan crud:generate Blog --fields="titulo#string; categoria#string; texto#text; imagem#file;"
