@@ -57,7 +57,7 @@ $hide = 0;
     @if (1 == 1):
         <style>
             .banner {
-                background-image: url('/img/dia-dos-namorados.JPEG');
+                background-image: url('/img/dia-dos-namorados.jpeg');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 margin-top: -25px;
@@ -395,7 +395,7 @@ $hide = 0;
     </div>
     <div class="footer-pensou">
        
-        <a href="http://www.amizade.fm.br/" target="_blank"><img src="/img/rodape-dia-dos-namorados.JPEG" width="100%"></a>
+        <a href="http://www.amizade.fm.br/" target="_blank"><img src="/img/rodape-dia-dos-namorados.jpeg" width="100%"></a>
 
     </div>
 
