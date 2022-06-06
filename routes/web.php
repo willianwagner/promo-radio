@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@oNatalAproxima')->name('home');
 //Route::get('/home', 'HomeController@site')->name('home');
 Route::post('/contato', 'HomeController@contato');
 
+
 Route::get('ao-vivo', function () {
     return view('ao-vivo');
 });
@@ -30,6 +31,8 @@ Auth::routes();
 Route::get('/dia-dos-namorados', 'HomeController@diaDosNamorados')->name('dia-dos-namorados');
 Route::get('/bolsa-de-mae', 'HomeController@bolsaDeMae')->name('bolsa-de-mae');
 Route::get('/natal-cheio-de-coisas-boas', 'HomeController@natalCheioDeCoisasBoas')->name('natal-cheio-de-coisas-boas');
+
+Route::post('/cidades', 'HomeController@cidadesEstado')->name('cidades-do-estado');
 
 
 //rotas protegidas por login
